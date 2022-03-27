@@ -55,7 +55,7 @@ a:focus {
   color: #c48f7f;
 }
 a:visited {
-  color: 2e9cca
+  color: #f4ddd5
 }
 a:hover {
   color: #c48f7f;
@@ -63,7 +63,7 @@ a:hover {
 }
 a:hover,
 a:focus {
-  color: c48f7f;
+  color: #c48f7f;
   text-decoration: underline;
 }
 
@@ -71,66 +71,23 @@ a:active {
   color: #ffffff;
 }
 
-.button.funds {
+.button {
   display: inline-block;
   background-color: #222d44;
   color: #f4ddd5;
   font-weight: 500;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
+  border-bottom: 2px solid;
   transition: 0.2s opacity;
 }
-.button.suntrax {
-  display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
+.button.menu {
+  background-color: transparent;
+  color: #0504aa;
   font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
-  transition: 0.2s opacity;
+  
 }
-.button.gosee {
-  display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
-  transition: 0.2s opacity;
-}
-.button.website {
-  display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
-  transition: 0.2s opacity;
-}
-.button.resume {
-  display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
-  transition: 0.2s opacity;
-}
-.button.email {
-  display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #f4ddd5
-  transition: 0.2s opacity;
-}
+
 
 .button:hover {
   opacity: 0.8;
