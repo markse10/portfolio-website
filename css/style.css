@@ -85,7 +85,10 @@ a:active {
   background-color: transparent;
   color: #0504aa;
   font-weight: 500;
-  
+
+}
+.button.menu:hover {
+color: #c48f7f
 }
 
 
