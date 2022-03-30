@@ -5,8 +5,7 @@ headers; #222d44;
 paragraph; #3d3d3d;
 buttons; #222d44;
 button text; #f4ddd5;
-links; #0504aa;
-visited; #29648a;
+links; #cc5500;
 hover; #c48f7f;
 */
 body {
@@ -44,8 +43,8 @@ h3 {
   color: #222d44;
 }
 
-a {
-  color: #0504aa;
+a, a:visited {
+  color: #183efa;
   text-decoration: none;
 }
 
@@ -54,9 +53,7 @@ a {
 a:focus {
   color: #c48f7f;
 }
-a:visited {
-  color: #f4ddd5
-}
+
 a:hover {
   color: #c48f7f;
 }
@@ -71,23 +68,15 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #222d44;
-  color: #f4ddd5;
-  font-weight: 500;
-  padding: 10px;
+  background-color: transparent;
+  color: #183efa;
+  font-weight: 600;
+  padding: 5px;
   border-radius: 3px;
   border-bottom: 2px solid;
   transition: 0.2s opacity;
 }
-.button.menu {
-  background-color: transparent;
-  color: #0504aa;
-  font-weight: 500;
 
-}
-.button.menu:hover {
-color: #c48f7f
-}
 
 
 .button:hover {
