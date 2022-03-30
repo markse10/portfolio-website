@@ -5,7 +5,7 @@ headers; #222d44;
 paragraph; #3d3d3d;
 buttons; #222d44;
 button text; #f4ddd5;
-links; #cc5500;
+links; #2e9cca;
 hover; #c48f7f;
 */
 body {
@@ -44,32 +44,23 @@ h3 {
 }
 
 a, a:visited {
-  color: #183efa;
+  color: #2e9cca;
   text-decoration: none;
 }
 
-
-
-a:focus {
-  color: #c48f7f;
-}
-
-a:hover {
-  color: #c48f7f;
-}
 a:hover,
 a:focus {
-  color: #c48f7f;
+  color: #183efa;
 }
 
 a:active {
-  color: #ffffff;
+  color: #2e9cca;
 }
 
 .button {
   display: inline-block;
   background-color: transparent;
-  color: #183efa;
+  color: #2e9cca;
   font-weight: 600;
   padding: 5px;
   border-radius: 3px;
