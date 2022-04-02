@@ -13,13 +13,12 @@ hover; #c48f7f;
 }
 
 header {
-  background-color: #f4ddd5;
-  text-align;
-  center;
+  background-color: #222d44;
+  width: 100%;
   padding: 10px 0;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(196, 143, 127, 1);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(196, 143, 127, 1);
-  box-shadow: 0px 5px 5px 0px rgba(196, 143, 127, 1);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(34, 45, 68, 1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(34, 45, 68, 1);
+  box-shadow: 0px 5px 5px 0px rgba(34, 45, 68, 1);
   position: fixed;
 }
 
@@ -36,7 +35,7 @@ img {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
@@ -102,7 +101,7 @@ a:focus {
 }
 
 .header {
-  background-color: #f4ddd5;
+  background-color: #222d44;
   text-align: center;
   padding: 10px 0;
 }
@@ -126,7 +125,8 @@ nav>ul>li>a {
 }
 
 #hero {
-  background-color: #f4ddd5;
+  background-color: #2e9cca;
+  color: #252d44;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
