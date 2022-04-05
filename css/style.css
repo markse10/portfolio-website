@@ -25,7 +25,7 @@ header {
 body {
   background-color: #eae9e5;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #3d3d3d;
@@ -38,6 +38,7 @@ img {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 
 h1 {
   line-height: 1.5em;
@@ -58,6 +59,7 @@ h3 {
   font-weight: 500;
   color: #222d44;
 }
+
 
 a, a:visited, a:active {
   color: #2e9cca;
@@ -95,6 +97,12 @@ a:focus {
   margin: 25px 0;
 }
 
+.row: ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .logo {
   max-width: 250px;
   max-height: 150px;
@@ -102,7 +110,6 @@ a:focus {
 
 .header {
   background-color: #222d44;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -110,7 +117,6 @@ nav>ul {
   list-style-type: none;
   display: inline-block;
   width: 100%;
-  padding: 0;
 }
 
 nav>ul>li {
@@ -130,8 +136,53 @@ nav>ul>li>a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center:
+}
+
+#hero span {
+  display: block;
 }
 
 main {
   padding-top: 300px;
 }
+
+/* ================================
+medium devices (640px and larger)
+=================================== */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13pm;
+  }
+
+  nav {
+    width:auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 10px 10px;
+  }
+}
+[class*="col-"] {
+  float: left;
+}
+
+
+/* ================================
+  large devices (1024px and larger)
+  =================================== */
+@media only screen and (min-width: 1024px) {}
+
+/* ================================
+    x-large devices (1440px and larger)
+    =================================== */
+@media only screen and (min-width: 1440px) {}
+
+/* ================================
+      extra-large devices (1920px and larger)
+      =================================== */
+@media only screen and (min-width: 1920px) {}
