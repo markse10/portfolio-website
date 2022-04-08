@@ -2,12 +2,25 @@
   colors used:
   background; #eae9e5;
   headers; #006a95;
+  header background; #1a2d4e;
   paragraph; #161b1f;
   buttons; #1a2d4e;
   button text; #bfa064;
   links; #2e9cca;
   hover; #c48f7f;
   */
+header {
+  background-color: #1a2d4e;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eae9e5;
   font-family: 'Montserrat', sans-serif;
@@ -24,51 +37,52 @@ h1, h2, h3, h4 {
 h1 {
   line-height: 2.75em;
   font-weight: 900;
-  color: #006a95;
+  color: #1a2d4e;
   text-align: center;
 }
 
 h2 {
   line-height: 2.25em;
-  font-weight: 600;
-  color: #006a95;
+  font-weight: 900;
+  color: #1a2d4e;
   text-align: center;
 }
 
 h3 {
   line-height: 1.75em;
-  font-weight: 500;
+  font-weight: 600;
   color: #006a95;
 }
 
-h3 {
+h4 {
   line-height: 1.35em;
-  font-weight: 400;
-  color: #006a95;
+  font-weight: 600;
+  color: #1a2d4e;
 }
+
 
 img {
   width: 100%;
 }
 
 a {
-  color: #2e9cca;
+  color: #bfa064;
   font-weight: 600;
   text-decoration: none;
 }
 
 a:visited {
-  color: #2e9cca;
+  color: #bfa064;
 }
 
 a:hover,
 a:focus {
-  color: #bfa064;
+  color: #2e9cca;
   text-decoration: underline;
 }
 
 a:active {
-  color: #2e9cca;
+  color: #bfa064;
 }
 
 .button {
@@ -96,4 +110,44 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #bfa064;
   transition: 0.2s opacity;
+}
+
+/*layout styling*/
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #161b1f;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding-right: 0 15px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#hero {
+  background-color: #006A95;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
 }
