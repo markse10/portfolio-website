@@ -35,7 +35,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  line-height: 2.75em;
+  line-height: 1.74em;
   font-weight: 900;
   color: #1a2d4e;
   text-align: center;
@@ -60,9 +60,8 @@ h4 {
   color: #1a2d4e;
 }
 
-
 img {
-  width: 100%;
+  width: 90%;
 }
 
 a {
@@ -90,26 +89,18 @@ a:active {
   background-color: #1a2d4e;
   color: #bfa064;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #bfa064;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
+
 
 .button:hover {
   opacity: 0.8;
-  text-decoration: none;
-}
-
-.button.gold {
-  display: inline-block;
-  background-color: #1a2d4e;
-  color: #bfa064;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #bfa064;
-  transition: 0.2s opacity;
 }
 
 /*layout styling*/
@@ -120,6 +111,13 @@ a:active {
 .row {
   margin: 25px 0;
 }
+
+.row::after {
+  content: "";
+  clear:both;
+  display: table;
+}
+
 
 #work .row {
   padding-bottom: 25px;
@@ -140,14 +138,129 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding-right: 0 15px;
+  padding: 0 15px;
   text-transform: uppercase;
   text-decoration: underline;
 }
 
 #hero {
-  background-color: #176a95;
+  background-color: #161b1f;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  color: #bfa064;
+  text-align: center;
+}
+
+#hero h1, #hero h2 {
+  color: #bfa064;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact p {
+  text-align: center;
+}
+/* ========================
+medium (640px and larger)
+=========================== */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float:right;
+  margin-top: 120px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+#about-page h3 { margin-top: 0;}
+}
+
+/* ========================
+large (1024px and larger)
+=========================== */
+@media only screen and (min-width: 1024px) {
+.col-lg-7 {
+  width: 58.33%
+}
+
+.col-lg-5 {
+  width: 41.66%
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/* ========================
+x-large (1440px and larger)
+=========================== */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* ========================
+extra large (1920px and larger)
+=========================== */
+@media only screen and (min-width: 1920px) {
+
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+0% {fill: #edc655;}
+50% {fill: #fcffad;}
+100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform:: translate(100px,48px);}
+}
+
+.cloud-back {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
