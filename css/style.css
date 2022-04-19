@@ -11,9 +11,8 @@
   */
 header {
   background-color: #1a2d4e;
-  text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0 4px;
   position: relative;
 }
 
@@ -129,10 +128,7 @@ a:active {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -185,6 +181,40 @@ nav>ul>li>a {
   width: 400px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 /* ========================
 medium (640px and larger)
 =========================== */
@@ -207,6 +237,22 @@ medium (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
+
+nav > ul {
+  margin: 1em 0;
+}
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
 }
 
 /* ========================
