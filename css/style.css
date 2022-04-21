@@ -29,7 +29,10 @@ body {
   color: #161b1f;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -94,14 +97,12 @@ a:active {
   border-bottom: 2px solid #bfa064;
   transition-duration: 0.2s;
   transition-property: opacity;
-  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 }
 
 .button:hover {
   opacity: 0.8;
 }
 
-/*layout styling*/
 .container {
   padding: 0 15px;
 }
@@ -125,13 +126,13 @@ a:active {
   max-width: 150px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -146,7 +147,8 @@ nav>ul>li>a {
   text-align: center;
 }
 
-#hero h1, #hero h2 {
+#hero h1,
+#hero h2 {
   color: #bfa064;
 }
 
@@ -198,20 +200,21 @@ nav>ul>li>a {
   padding-right: 10px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -238,21 +241,21 @@ medium (640px and larger)
     margin-top: 0;
   }
 
-nav > ul {
-  margin: 1em 0;
-}
-  nav>ul>li {
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ========================
@@ -260,11 +263,11 @@ large (1024px and larger)
 =========================== */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 58.33%
+    width: 58.33%;
   }
 
   .col-lg-5 {
-    width: 41.66%
+    width: 41.66%;
   }
 
   .container {
@@ -277,22 +280,17 @@ large (1024px and larger)
 /* ========================
 x-large (1440px and larger)
 =========================== */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
-/* ========================
-extra large (1920px and larger)
-=========================== */
-@media only screen and (min-width: 1920px) {}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.about-picture {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  .about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @keyframes color-change {
